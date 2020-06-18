@@ -41,3 +41,16 @@ NameVirtualHost *:80
 
 #RESTART APACHE2
 systemctl restart apache2
+
+#====================================
+#======= INSTAL SSH SERVER ==========
+#====================================
+
+#UPDATE
+$ sudo apt-get update
+
+#INSTALL OPEN SSH SERVER
+sudo apt-get install openssh-server -y
+
+#CEK STATUS SSH
+sudo systemctl status ssh
